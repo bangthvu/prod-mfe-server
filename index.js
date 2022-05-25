@@ -1,6 +1,6 @@
 import "dotenv/config";
-import createServer from "./server";
-import { connectDatabase, seedDatabase } from "./database";
+import createServer from "./server.js";
+import { connectDatabase, seedDatabase } from "./database.js";
 
 const appName = "Server API";
 const port = process.env.PORT || 8084;

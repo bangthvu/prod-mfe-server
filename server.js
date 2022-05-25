@@ -8,7 +8,7 @@ import morgan from "morgan";
 import cors from "cors";
 
 /* Local files */
-import articleRoutes from "./routes/articles";
+import articleRoutes from "./routes/articles.js";
 
 
 function createServer() {

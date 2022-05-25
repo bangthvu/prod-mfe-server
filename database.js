@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Article from "./models/article";
+import Article from "./models/article.js";
 
 export async function connectDatabase() {
   const connectionString = process.env.MONGODB_URL

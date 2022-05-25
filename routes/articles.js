@@ -1,5 +1,5 @@
 import express from "express";
-import Article from "../models/article"
+import Article from "../models/article.js"
 
 
 const articleRoutes = express.Router();
@@ -11,6 +11,7 @@ articleRoutes.get("/", async (req, res) => {
 
 articleRoutes.post("/", async (req, res) => {
   try {
+    console.log(req.body)
     const articleInfo = await Article.create(req.body.titel, req.body.undertitel, req.body.journalist, req.body.tekst, req.body.type);
     res.status(201);
     res.json(articleInfo);
